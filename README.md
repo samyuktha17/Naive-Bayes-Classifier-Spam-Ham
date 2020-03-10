@@ -4,8 +4,8 @@ A Naive Bayes Classifier built without the use of libraries to classify emails a
 
 1. nblearn.py:
 
-nblearn.py will be invoked in the following way:
->python3 nblearn.py /path/to/input
+nblearn.py will be invoked in the following way: >python3 nblearn.py /path/to/input
+
 And output a model file called nbmodel.txt
   1.1 Reading data
   The argument is a data directory. The script should search through the directory recursively looking for
@@ -15,8 +15,8 @@ And output a model file called nbmodel.txt
 
 2. nbclassify.py
 
-nbclassify.py will be invoked in the following way:
->python3 nbclassify.py /path/to/input
+nbclassify.py will be invoked in the following way: >python3 nbclassify.py /path/to/input
+
 The argument is again a data directory but you should not make any assumptions about the structure of
 the directory. Instead, you should search the directory for files with the extension ".txt". nbclassify.py
 should read the parameters of a naïve Bayes model from the file nbmodel.txt, and classify each ".txt"
@@ -29,8 +29,8 @@ LABEL path_2
 
 3. nbevaluate.py
 
-nbevaluate.py will be invoked in the following way:
->python3 nbevaluate.py nboutput_filename
+nbevaluate.py will be invoked in the following way: >python3 nbevaluate.py nboutput_filename
+
 nboutput_filename is the output file of nbclassify.py described above. For each line in the file,
 nbevaluate.py will split the line into the guessed label and file path. nbevaluate.py will search for ham or
 spam in the path to determine the true label of the example (i.e., “spam” or “ham”). If neither is found,
