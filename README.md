@@ -26,12 +26,9 @@ format below:
 LABEL path_1
 LABEL path_2
 ⋮
-In the above format, LABEL is either “spam” or “ham” and path is the path to the file, and the filename
-(e.g., on Windows a path might be: "C:\dev\4\ham\0001.2000-01-17.beck.ham.txt").
-If you are taking the default approach to unknown tokens not seen in training, then nbclassify.py should
-simply ignore them (i.e., pretend they did not occur).
 
 3. nbevaluate.py
+
 nbevaluate.py will be invoked in the following way:
 >python3 nbevaluate.py nboutput_filename
 nboutput_filename is the output file of nbclassify.py described above. For each line in the file,
